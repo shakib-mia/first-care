@@ -8,23 +8,28 @@ export default {
       screens: {
         sm: "100%",
         md: "768px",
-        lg: "1000px",
+        lg: "1175px",
         xl: "1240px",
       },
     },
     colors: {
       body: "#000D38A1",
+      black: "#000000",
       white: {
         DEFAULT: "#FFFFFF",
         secondary: "#F8F8F8",
       },
       light: "#F4F3FF",
-      gray: "#4f4f4f",
+      gray: {
+        DEFAULT: "#4f4f4f",
+        dark: "#000D38A1",
+      },
       primary: {
         DEFAULT: "#04055E",
         light: "#333388",
       },
       secondary: {
+        light: "#DD1C1A26",
         DEFAULT: "#DD1C1A",
         dark: "#A31211",
       },

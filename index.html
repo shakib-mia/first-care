@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Care - Your Trusted Private General Practitioner</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -33,22 +34,30 @@
             <li class="px-3">Follow Us</li>
             <li class="flex items-center px-3">
               <a href="#">
-                <i class="fab fa-facebook text-xl"></i>
+                <i
+                  class="fab fa-facebook text-xl transition hover:text-secondary"
+                ></i>
               </a>
             </li>
             <li class="flex items-center px-3">
               <a href="#">
-                <i class="fab fa-twitter text-xl"></i>
+                <i
+                  class="fab fa-twitter text-xl transition hover:text-secondary"
+                ></i>
               </a>
             </li>
             <li class="flex items-center px-3">
               <a href="#">
-                <i class="fab fa-instagram text-xl"></i>
+                <i
+                  class="fab fa-instagram text-xl transition hover:text-secondary"
+                ></i>
               </a>
             </li>
             <li class="flex items-center px-3">
               <a href="#">
-                <i class="fab fa-linkedin text-xl"></i>
+                <i
+                  class="fab fa-linkedin text-xl transition hover:text-secondary"
+                ></i>
               </a>
             </li>
           </ul>
@@ -58,105 +67,286 @@
 
     <!-- Navbar Section -->
 
-    <nav
-      class="text-gray relative top-0 bg-white shadow-[0_0_80px_0_#2B245D21]"
-    >
-      <div class="container flex items-center justify-between py-6">
-        <a href="#" class="flex items-center gap-2">
-          <img src="/vite.svg" alt="logo" class="aspect-square w-7" />
-          <p class="font-poppins text-[2rem] font-semibold">FirstCare</p>
-        </a>
+    <nav class="text-gray sticky z-50 bg-white shadow-[0_0_80px_0_#2B245D21]">
+      <div class="relative">
+        <div class="container flex items-center justify-between py-6">
+          <a href="#" class="flex items-center gap-2">
+            <img src="/vite.svg" alt="logo" class="aspect-square w-7" />
+            <p class="font-poppins text-[2rem] font-semibold">FirstCare</p>
+          </a>
 
-        <label for="nav-check" class="lg:hidden">
-          <i class="fa fa-bars cursor-pointer text-xl"></i>
-        </label>
-        <input type="checkbox" name="" class="hidden" id="nav-check" />
-        <ul
-          class="lg:bg-transparent absolute right-0 z-10 flex w-full flex-col gap-5 rounded-b-2xl bg-white px-4 text-right font-medium transition-all lg:static lg:w-8/12 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:p-0 lg:pb-0 lg:pt-0 lg:text-left"
-        >
-          <li class="text-lg font-medium lg:px-0">
-            <a
-              class="underline-offset-4 transition hover:text-secondary hover:underline"
-              href="#"
-              >Home</a
-            >
-          </li>
-          <li class="text-lg font-medium lg:px-0">
-            <a
-              class="underline-offset-4 transition hover:text-secondary hover:underline"
-              href="#"
-              >About us</a
-            >
-          </li>
-          <li class="text-lg font-medium lg:px-0">
-            <a
-              class="underline-offset-4 transition hover:text-secondary hover:underline"
-              href="#"
-              >Services</a
-            >
-          </li>
-          <li class="text-lg font-medium lg:px-0">
-            <a
-              class="underline-offset-4 transition hover:text-secondary hover:underline"
-              href="#"
-              >Price</a
-            >
-          </li>
-          <li class="text-lg font-medium lg:px-0">
-            <a
-              class="underline-offset-4 transition hover:text-secondary hover:underline"
-              href="#"
-              >Blog</a
-            >
-          </li>
-          <li class="text-lg font-medium lg:px-0">
-            <a
-              class="underline-offset-4 transition hover:text-secondary hover:underline"
-              href="#"
-              >FAQs</a
-            >
-          </li>
-          <li class="text-lg font-medium lg:px-0">
-            <a
-              class="underline-offset-4 transition hover:text-secondary hover:underline"
-              href="#"
-              >Contact</a
-            >
-          </li>
-        </ul>
+          <label for="nav-check" class="lg:hidden">
+            <i class="fa fa-bars cursor-pointer text-xl"></i>
+          </label>
+          <input type="checkbox" name="" class="hidden" id="nav-check" />
+          <ul
+            class="lg:bg-transparent absolute right-0 z-10 flex w-full flex-col gap-5 rounded-b-2xl bg-white px-4 text-right font-medium transition-all lg:static lg:w-8/12 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:p-0 lg:pb-0 lg:pt-0 lg:text-left"
+          >
+            <li class="text-lg font-medium lg:px-0">
+              <a
+                class="underline-offset-4 transition hover:text-secondary hover:underline"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="text-lg font-medium lg:px-0">
+              <a
+                class="underline-offset-4 transition hover:text-secondary hover:underline"
+                href="#"
+                >About us</a
+              >
+            </li>
+            <li class="text-lg font-medium lg:px-0">
+              <a
+                class="underline-offset-4 transition hover:text-secondary hover:underline"
+                href="#"
+                >Services</a
+              >
+            </li>
+            <li class="text-lg font-medium lg:px-0">
+              <a
+                class="underline-offset-4 transition hover:text-secondary hover:underline"
+                href="#"
+                >Price</a
+              >
+            </li>
+            <li class="text-lg font-medium lg:px-0">
+              <a
+                class="underline-offset-4 transition hover:text-secondary hover:underline"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li class="text-lg font-medium lg:px-0">
+              <a
+                class="underline-offset-4 transition hover:text-secondary hover:underline"
+                href="#"
+                >FAQs</a
+              >
+            </li>
+            <li class="text-lg font-medium lg:px-0">
+              <a
+                class="underline-offset-4 transition hover:text-secondary hover:underline"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
 
-        <button class="secondary hidden lg:block">Book online</button>
+          <button class="secondary hidden lg:block">Book online</button>
+        </div>
       </div>
     </nav>
 
-    <header class="relative bg-primary">
+    <header class="relative overflow-hidden bg-primary">
+      <img
+        src="./assets/header-bg-element.svg"
+        class="absolute -bottom-20"
+        alt=""
+      />
       <div class="container">
-        <div class="bg-transparent w-1/2 py-56">
-          <h1 class="font-bold text-white">
+        <div class="bg-transparent w-full py-20 lg:w-1/2 lg:py-56">
+          <h1
+            class="font-bold text-white"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             Your Trusted Private General Practitioner
           </h1>
 
-          <p class="mb-10 mt-4 text-white">
+          <p
+            class="mb-10 mt-4 text-white"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             At FirstCare GP, we prioritize your well-being and convenience,
             ensuring you receive prompt and personalized medical attention.Beat
             the queues and arrange an in-person or virtual consultation with a
             private GP.
           </p>
 
-          <button class="secondary">Book Appointment</button>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <button class="secondary">Book Appointment</button>
+          </div>
         </div>
       </div>
       <img
         src="./assets/hero.webp"
         alt="hero"
-        class="absolute right-0 top-0 h-full w-1/2 object-cover"
+        class="absolute right-0 top-0 h-full w-0 object-cover lg:w-1/2"
       />
     </header>
+
+    <!-- ABout us section -->
+    <section
+      class="container grid grid-cols-1 items-center gap-11 py-14 lg:grid-cols-2 lg:py-28"
+      id="about-section"
+    >
+      <input type="checkbox" class="hidden" id="video-check" />
+      <div
+        class="bg-black fixed left-0 top-0 z-[9999999] flex h-screen w-screen items-center justify-center bg-opacity-50"
+        id="video-container"
+      >
+        <div class="container relative aspect-[16/9]">
+          <label
+            for="video-check"
+            class="absolute -top-12 right-4 flex h-9 w-9 cursor-pointer items-center justify-center bg-secondary text-white transition hover:bg-secondary-dark lg:-right-12"
+          >
+            <i class="fa fa-times"></i>
+          </label>
+          <iframe
+            class="h-full w-full"
+            src="https://www.youtube.com/embed/xcJtL7QggTI?si=YN9q7bMgyNle6d7Z"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="relative grid grid-cols-2 gap-6">
+        <img
+          src="./assets/about-us-1.jpg"
+          class="w-full"
+          alt="about-us-1"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="250"
+        />
+        <img
+          src="./assets/about-us-2.jpg"
+          class="h-[7rem] w-full object-cover lg:h-[18rem]"
+          alt="about-us-2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        />
+
+        <div
+          class="absolute bottom-0 right-0 h-[7rem] w-11/12 bg-primary p-2 text-white lg:top-80 lg:h-[11rem] lg:w-3/4 lg:p-10"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
+          <h6 class="font-semibold">
+            Watch a video about how we work and try for our customers
+          </h6>
+
+          <div for="video-check" class="mt-0 flex items-center gap-4 lg:gap-7">
+            <p class="capitalize">play video</p>
+            <div class="h-px w-36 bg-white"></div>
+            <label
+              for="video-check"
+              class="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-secondary"
+            >
+              <i class="fa fa-play"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div
+          class="flex items-center gap-4"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <div class="subheading-icon">
+            <div class="subheading-white-square"></div>
+            <div class="subheading-red-square"></div>
+          </div>
+
+          <h6 class="font-bold text-secondary">About Us</h6>
+        </div>
+        <h2
+          class="mt-6 font-semibold leading-snug text-primary"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          FirstCare Private GP Services
+        </h2>
+
+        <p class="mb-4" data-aos="fade-left" data-aos-duration="1000">
+          At CareFirst GP, we are committed to providing top-notch healthcare
+          services that prioritize your well-being and convenience. Our team of
+          experienced professionals offers personalized medical care tailored to
+          your unique needs, whether through in-person appointments or virtual
+          consultations.
+        </p>
+        <p class="mb-6" data-aos="fade-left" data-aos-duration="1000">
+          We believe in building lasting relationships with our patients,
+          fostering an environment of trust and compassion. Our mission is to
+          ensure you receive timely and effective medical attention, helping you
+          achieve and maintain optimal health. Discover the CareFirst GP
+          difference and let us be your partner in health and wellness.
+        </p>
+
+        <ul class="flex flex-col gap-4">
+          <li
+            class="flex items-center gap-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div
+              class="bg-secondary-light flex aspect-square w-8 flex-shrink-0 items-center justify-center rounded-[0.25rem] text-secondary"
+            >
+              <i class="fa fa-check"></i>
+            </div>
+
+            <p class="font-semibold text-primary">
+              Qualification and professional memberships
+            </p>
+          </li>
+
+          <li
+            class="flex items-center gap-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div
+              class="flex aspect-square w-8 flex-shrink-0 items-center justify-center rounded-[0.25rem] bg-secondary text-white"
+            >
+              <i class="fa fa-check"></i>
+            </div>
+
+            <p class="font-semibold text-primary">
+              Educating the public about Post Intensive Care Syndrome; and,
+            </p>
+          </li>
+
+          <li
+            class="flex items-center gap-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div
+              class="bg-secondary-light flex aspect-square w-8 flex-shrink-0 items-center justify-center rounded-[0.25rem] text-secondary"
+            >
+              <i class="fa fa-check"></i>
+            </div>
+
+            <p class="font-semibold text-primary">
+              Playing a role in stomping out tobacco manufacturing and political
+              relationships with big tobacco.
+            </p>
+          </li>
+        </ul>
+
+        <div data-aos="fade-left" data-aos-duration="1000">
+          <button class="primary mt-10">Read More</button>
+        </div>
+      </aside>
+    </section>
 
     <script
       src="https://kit.fontawesome.com/b50fc748ca.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

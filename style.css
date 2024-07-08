@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-xs text-body sm:text-sm md:text-base;
+  @apply overflow-x-hidden text-xs text-body sm:text-sm md:text-base;
 }
 
 button {
@@ -13,7 +13,7 @@ button {
 }
 
 button.primary {
-  @apply rounded-full bg-primary text-white hover:bg-primary-light;
+  @apply rounded-full bg-primary text-white ring-primary ring-offset-2 hover:bg-primary-light active:ring-2;
 }
 
 button.secondary {
@@ -21,19 +21,27 @@ button.secondary {
 }
 
 h1 {
-  @apply text-4xl sm:text-5xl md:text-6xl;
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
 }
 
 h2 {
-  @apply text-2xl sm:text-3xl md:text-4xl;
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
 }
 
 h3 {
-  @apply text-base sm:text-lg md:text-xl;
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
 }
 
 h4 {
-  @apply text-sm sm:text-base md:text-lg;
+  @apply text-lg sm:text-xl md:text-2xl lg:text-3xl;
+}
+
+h5 {
+  @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+}
+
+h6 {
+  @apply text-sm sm:text-base md:text-lg lg:text-xl;
 }
 
 p {
@@ -41,9 +49,29 @@ p {
 }
 
 nav ul {
-  @apply top-16 h-0 overflow-hidden py-0 transition lg:h-auto;
+  @apply top-16 h-0 overflow-hidden py-0 transition duration-500 lg:h-auto;
 }
 
 nav #nav-check:checked + ul {
   @apply h-[22rem] pb-4 md:h-auto md:py-0;
+}
+
+.subheading-icon {
+  @apply relative h-7 w-7;
+}
+
+.subheading-red-square {
+  @apply absolute left-0 top-0 h-5 w-5 rounded-sm bg-secondary;
+}
+
+.subheading-white-square {
+  @apply absolute left-[7px] top-[7px] h-5 w-5 rounded-sm border-2 border-primary bg-white;
+}
+
+#video-container {
+  @apply pointer-events-none opacity-0 transition-opacity duration-700;
+}
+
+#video-check:checked + #video-container {
+  @apply pointer-events-auto opacity-100;
 }
