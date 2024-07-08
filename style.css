@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-xs text-body sm:text-sm md:text-base;
+}
+
+button {
+  @apply px-14 py-4 capitalize transition;
+}
+
+button.primary {
+  @apply rounded-full bg-primary text-white hover:bg-primary-light;
+}
+
+button.secondary {
+  @apply rounded-full bg-secondary text-white ring-secondary ring-offset-2 hover:bg-secondary-dark active:ring-2;
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl;
+}
+
+h2 {
+  @apply text-2xl sm:text-3xl md:text-4xl;
+}
+
+h3 {
+  @apply text-base sm:text-lg md:text-xl;
+}
+
+h4 {
+  @apply text-sm sm:text-base md:text-lg;
+}
+
+p {
+  @apply text-xs md:text-sm lg:text-lg;
+}
+
+nav ul {
+  @apply top-16 h-0 overflow-hidden py-0 transition lg:h-auto;
+}
+
+nav #nav-check:checked + ul {
+  @apply h-[22rem] pb-4 md:h-auto md:py-0;
+}

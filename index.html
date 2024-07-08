@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Care - Your Trusted Private General Practitioner</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Top Contact Section -->
+
+    <div class="bg-primary py-3 text-white">
+      <div class="container">
+        <div
+          class="flex flex-col items-center justify-between gap-4 lg:flex-row lg:gap-0"
+        >
+          <aside class="flex items-center gap-6">
+            <div class="flex items-center gap-2">
+              <i class="fa fa-envelope-open"></i>
+              <a class="text-sm" href="mailto:support@raddito.com"
+                >support@raddito.com</a
+              >
+            </div>
+
+            <div class="flex items-center gap-2">
+              <i class="fa fa-phone rotate-90"></i>
+              <p>+833-900-8338</p>
+            </div>
+          </aside>
+
+          <ul class="flex items-center divide-x divide-white">
+            <li class="px-3">Follow Us</li>
+            <li class="flex items-center px-3">
+              <a href="#">
+                <i class="fab fa-facebook text-xl"></i>
+              </a>
+            </li>
+            <li class="flex items-center px-3">
+              <a href="#">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+            </li>
+            <li class="flex items-center px-3">
+              <a href="#">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+            </li>
+            <li class="flex items-center px-3">
+              <a href="#">
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar Section -->
+
+    <nav
+      class="text-gray relative top-0 bg-white shadow-[0_0_80px_0_#2B245D21]"
+    >
+      <div class="container flex items-center justify-between py-6">
+        <a href="#" class="flex items-center gap-2">
+          <img src="/vite.svg" alt="logo" class="aspect-square w-7" />
+          <p class="font-poppins text-[2rem] font-semibold">FirstCare</p>
+        </a>
+
+        <label for="nav-check" class="lg:hidden">
+          <i class="fa fa-bars cursor-pointer text-xl"></i>
+        </label>
+        <input type="checkbox" name="" class="hidden" id="nav-check" />
+        <ul
+          class="lg:bg-transparent absolute right-0 z-10 flex w-full flex-col gap-5 rounded-b-2xl bg-white px-4 text-right font-medium transition-all lg:static lg:w-8/12 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:p-0 lg:pb-0 lg:pt-0 lg:text-left"
+        >
+          <li class="text-lg font-medium lg:px-0">
+            <a
+              class="underline-offset-4 transition hover:text-secondary hover:underline"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="text-lg font-medium lg:px-0">
+            <a
+              class="underline-offset-4 transition hover:text-secondary hover:underline"
+              href="#"
+              >About us</a
+            >
+          </li>
+          <li class="text-lg font-medium lg:px-0">
+            <a
+              class="underline-offset-4 transition hover:text-secondary hover:underline"
+              href="#"
+              >Services</a
+            >
+          </li>
+          <li class="text-lg font-medium lg:px-0">
+            <a
+              class="underline-offset-4 transition hover:text-secondary hover:underline"
+              href="#"
+              >Price</a
+            >
+          </li>
+          <li class="text-lg font-medium lg:px-0">
+            <a
+              class="underline-offset-4 transition hover:text-secondary hover:underline"
+              href="#"
+              >Blog</a
+            >
+          </li>
+          <li class="text-lg font-medium lg:px-0">
+            <a
+              class="underline-offset-4 transition hover:text-secondary hover:underline"
+              href="#"
+              >FAQs</a
+            >
+          </li>
+          <li class="text-lg font-medium lg:px-0">
+            <a
+              class="underline-offset-4 transition hover:text-secondary hover:underline"
+              href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <button class="secondary hidden lg:block">Book online</button>
+      </div>
+    </nav>
+
+    <header class="relative bg-primary">
+      <div class="container">
+        <div class="bg-transparent w-1/2 py-56">
+          <h1 class="font-bold text-white">
+            Your Trusted Private General Practitioner
+          </h1>
+
+          <p class="mb-10 mt-4 text-white">
+            At FirstCare GP, we prioritize your well-being and convenience,
+            ensuring you receive prompt and personalized medical attention.Beat
+            the queues and arrange an in-person or virtual consultation with a
+            private GP.
+          </p>
+
+          <button class="secondary">Book Appointment</button>
+        </div>
+      </div>
+      <img
+        src="./assets/hero.webp"
+        alt="hero"
+        class="absolute right-0 top-0 h-full w-1/2 object-cover"
+      />
+    </header>
+
+    <script
+      src="https://kit.fontawesome.com/b50fc748ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
