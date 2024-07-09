@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Care - Your Trusted Private General Practitioner</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -67,7 +81,7 @@
 
     <!-- Navbar Section -->
 
-    <nav class="text-gray sticky z-50 bg-white shadow-[0_0_80px_0_#2B245D21]">
+    <nav class="sticky z-50 bg-white text-gray shadow-[0_0_80px_0_#2B245D21]">
       <div class="relative">
         <div class="container flex items-center justify-between py-6">
           <a href="#" class="flex items-center gap-2">
@@ -80,7 +94,7 @@
           </label>
           <input type="checkbox" name="" class="hidden" id="nav-check" />
           <ul
-            class="lg:bg-transparent absolute right-0 z-10 flex w-full flex-col gap-5 rounded-b-2xl bg-white px-4 text-right font-medium transition-all lg:static lg:w-8/12 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:p-0 lg:pb-0 lg:pt-0 lg:text-left"
+            class="absolute right-0 z-10 flex w-full flex-col gap-5 rounded-b-2xl bg-white px-4 text-right font-medium transition-all lg:static lg:w-8/12 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:bg-transparent lg:p-0 lg:pb-0 lg:pt-0 lg:text-left"
           >
             <li class="text-lg font-medium lg:px-0">
               <a
@@ -145,7 +159,7 @@
         alt=""
       />
       <div class="container">
-        <div class="bg-transparent w-full py-20 lg:w-1/2 lg:py-56">
+        <div class="w-full bg-transparent py-20 lg:w-1/2 lg:py-56">
           <h1
             class="font-bold text-white"
             data-aos="fade-right"
@@ -189,7 +203,7 @@
     >
       <input type="checkbox" class="hidden" id="video-check" />
       <div
-        class="bg-black fixed left-0 top-0 z-[9999999] flex h-screen w-screen items-center justify-center bg-opacity-50"
+        class="fixed left-0 top-0 z-[9999999] flex h-screen w-screen items-center justify-center bg-black bg-opacity-50"
         id="video-container"
       >
         <div class="container relative aspect-[16/9]">
@@ -292,7 +306,7 @@
             data-aos-duration="1000"
           >
             <div
-              class="bg-secondary-light flex aspect-square w-8 flex-shrink-0 items-center justify-center rounded-[0.25rem] text-secondary"
+              class="flex aspect-square w-8 flex-shrink-0 items-center justify-center rounded-[0.25rem] bg-secondary-light text-secondary"
             >
               <i class="fa fa-check"></i>
             </div>
@@ -324,7 +338,7 @@
             data-aos-duration="1000"
           >
             <div
-              class="bg-secondary-light flex aspect-square w-8 flex-shrink-0 items-center justify-center rounded-[0.25rem] text-secondary"
+              class="flex aspect-square w-8 flex-shrink-0 items-center justify-center rounded-[0.25rem] bg-secondary-light text-secondary"
             >
               <i class="fa fa-check"></i>
             </div>
@@ -342,9 +356,733 @@
       </aside>
     </section>
 
+    <!-- Services Section -->
+
+    <section class="container pb-14 lg:pb-28">
+      <div
+        class="mb-4 flex items-center justify-center gap-4"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <div class="subheading-icon">
+          <div class="subheading-white-square"></div>
+          <div class="subheading-red-square"></div>
+        </div>
+
+        <h6 class="font-bold text-secondary">Services</h6>
+      </div>
+
+      <h2
+        class="mb-5 text-center font-semibold text-primary lg:mb-14"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="250"
+      >
+        Our Medical Service
+      </h2>
+
+      <div class="owl-carousel">
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <img
+            src="./assets/services/Personalized Health.jpg"
+            alt="personalized health"
+          />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Personalized Health</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <img src="./assets/services/Medicals.jpg" alt="personalized health" />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Medicals</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <img
+            src="./assets/services/Personalized Health-1.jpg"
+            alt="personalized health"
+          />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Mental Health</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <img
+            src="./assets/services/Personalized Health.jpg"
+            alt="personalized health"
+          />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Personalized Health</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <img src="./assets/services/Medicals.jpg" alt="personalized health" />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Medicals</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <img
+            src="./assets/services/Personalized Health-1.jpg"
+            alt="personalized health"
+          />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Mental Health</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <img
+            src="./assets/services/Personalized Health.jpg"
+            alt="personalized health"
+          />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Personalized Health</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <img src="./assets/services/Medicals.jpg" alt="personalized health" />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Medicals</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="bg-gray-light"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <img
+            src="./assets/services/Personalized Health-1.jpg"
+            alt="personalized health"
+          />
+          <div class="p-4">
+            <h5 class="mb-4 font-medium text-primary">Mental Health</h5>
+            <p class="mb-8">
+              An appointment with Dr Ike Nnene can be used to obtain an opinion
+              on any health concern or symptom. The consultation can be face to
+              face or virtual.
+            </p>
+
+            <div class="text-right">
+              <a href="#" class="font-bold text-secondary underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Telemedicine consultation -->
+
+    <section class="bg-primary py-14 text-white lg:py-28">
+      <div class="mx-auto text-center lg:w-3/4">
+        <h2
+          class="font-semibold capitalize"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Telemedicine Consultations Also Available
+        </h2>
+        <p
+          class="mx-auto mb-10 mt-8 text-white-secondary lg:w-3/5"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          We are able to hold confidential doctor consultations with patients on
+          our secure web platform. Considerable flexibility exists regarding
+          this service. Appointments can be arranged at short notice. A link to
+          the telemedicine consultation platform is sent via email.
+        </p>
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <button class="secondary">Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commitment Section -->
+
+    <section
+      class="container flex flex-col items-center gap-10 py-14 text-white lg:flex-row lg:py-28"
+    >
+      <div class="h-fit w-full lg:w-7/12">
+        <div
+          class="mb-6 flex items-center gap-4"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="subheading-icon">
+            <div class="subheading-white-square"></div>
+            <div class="subheading-red-square"></div>
+          </div>
+
+          <h6 class="font-bold text-secondary">Mission</h6>
+        </div>
+
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="font-bold text-primary"
+        >
+          Our Commitment
+        </h2>
+
+        <p
+          class="mt-6 text-gray-dark lg:w-4/6"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          At First Care GP we are committed to being the solution to your
+          primary care need
+        </p>
+
+        <div
+          class="mt-6 rounded-xl p-6 shadow-[0_0_80px_0_#CDCDCC40]"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h5 class="mb-4 font-semibold text-primary">Trusted Expertise</h5>
+          <p class="text-gray-dark">
+            At CareFirst GP, our lead physician brings over 29 years of
+            experience in the UK health system, combining extensive knowledge
+            and skill with an empathetic approach to patient care. We maintain
+            close relationships with specialists, psychologists,
+            physiotherapists, and other ancillary medical services, ensuring a
+            comprehensive private medical service for all our patients.
+          </p>
+        </div>
+
+        <div
+          class="mt-6 rounded-xl p-6 shadow-[0_0_80px_0_#CDCDCC40]"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h5 class="mb-4 font-semibold text-primary">Personalised Medicine</h5>
+          <p class="text-gray-dark">
+            We tailor health solutions to meet the unique needs and preferences
+            of our patients, aiming for positive outcomes and long-term optimal
+            health. We utilize information related to genetic, clinical,
+            lifestyle, nutritional, and neuroendocrine factors to make informed
+            decisions that benefit our patients' well-being.
+          </p>
+        </div>
+      </div>
+      <div
+        class="h-full w-full lg:w-5/12"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <img
+          src="./assets/commitment.jpeg"
+          alt="commitment"
+          class="h-fit object-cover"
+        />
+      </div>
+    </section>
+
+    <section class="container py-14 lg:py-28">
+      <div
+        class="mb-6 flex items-center justify-center gap-4"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <div class="subheading-icon">
+          <div class="subheading-white-square"></div>
+          <div class="subheading-red-square"></div>
+        </div>
+
+        <h6 class="font-bold text-secondary">Team</h6>
+      </div>
+
+      <h2
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        class="text-center font-bold text-primary"
+      >
+        Meet Our Team
+      </h2>
+
+      <div class="owl-carousel mt-5 lg:mt-14">
+        <article data-aos="fade-up" data-aos-duration="1000">
+          <img src="./assets/team/Rectangle 9486.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Dr. Emma Thompson
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+
+        <article
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <img src="./assets/team/Rectangle 9486-1.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Mrs Linda Nnene
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+
+        <article
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <img src="./assets/team/Rectangle 9486-2.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Mrs Linda Nnene
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <img src="./assets/team/Rectangle 9486.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Dr. Emma Thompson
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <img src="./assets/team/Rectangle 9486-1.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Mrs Linda Nnene
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <img src="./assets/team/Rectangle 9486-2.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Mrs Linda Nnene
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <img src="./assets/team/Rectangle 9486.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Dr. Emma Thompson
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <img src="./assets/team/Rectangle 9486-1.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Mrs Linda Nnene
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <img src="./assets/team/Rectangle 9486-2.jpg" alt="emma-thompson" />
+          <h5 class="bg-secondary py-6 text-center font-semibold text-white">
+            Mrs Linda Nnene
+          </h5>
+          <div class="flex justify-center gap-3 bg-primary py-4">
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-light text-white transition hover:bg-secondary"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <script
       src="https://kit.fontawesome.com/b50fc748ca.js"
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="/main.js"></script>

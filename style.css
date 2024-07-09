@@ -75,3 +75,15 @@ nav #nav-check:checked + ul {
 #video-check:checked + #video-container {
   @apply pointer-events-auto opacity-100;
 }
+
+.owl-dot {
+  @apply h-3 w-3 rounded-none !bg-primary;
+}
+
+.owl-dot.active {
+  @apply !bg-secondary;
+}
+
+.owl-dots {
+  @apply mt-14 flex justify-center gap-3;
+}
