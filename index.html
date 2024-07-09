@@ -81,11 +81,18 @@
 
     <!-- Navbar Section -->
 
-    <nav class="sticky z-50 bg-white text-gray shadow-[0_0_80px_0_#2B245D21]">
+    <nav
+      class="sticky z-[9999999999] bg-white text-gray shadow-[0_0_80px_0_#2B245D21]"
+      id="navbar"
+    >
       <div class="relative">
         <div class="container flex items-center justify-between py-6">
           <a href="#" class="flex items-center gap-2">
-            <img src="/vite.svg" alt="logo" class="aspect-square w-7" />
+            <img
+              src="./assets/logo.webp"
+              alt="logo"
+              class="aspect-square w-7"
+            />
             <p class="font-poppins text-[2rem] font-semibold">FirstCare</p>
           </a>
 
@@ -187,7 +194,7 @@
         </div>
         <img
           src="./assets/header-bg-element.png"
-          class="absolute left-40 top-0 z-30 h-full w-1/2"
+          class="absolute left-[11%] top-0 z-30 hidden h-full w-1/2 lg:block"
           alt=""
         />
       </div>
@@ -1240,7 +1247,7 @@
 
     <section class="py-14 lg:py-28">
       <div
-        class="mb-6 flex items-center justify-center gap-4"
+        class="mb-3 flex items-center justify-center gap-4 lg:mb-6"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
@@ -1261,7 +1268,7 @@
       </h2>
 
       <div
-        class="container mb-4 mt-20 grid grid-cols-1 gap-5 md:mb-8 md:grid-cols-2 lg:mb-12 lg:grid-cols-3"
+        class="container mb-4 mt-5 grid grid-cols-1 gap-5 md:mb-8 md:grid-cols-2 lg:mb-12 lg:mt-20 lg:grid-cols-3"
       >
         <article
           class="relative overflow-hidden rounded-sm shadow-[0_0_20px_4px_#04055E0F]"
@@ -1392,55 +1399,57 @@
     <!-- Newsletter Section -->
 
     <section class="bg-secondary py-14 text-white lg:py-28">
-      <div class="mx-auto px-4 text-center lg:w-7/12">
-        <h2
-          class="font-roboto font-bold capitalize"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          Subscribe To Our Newsletter
-        </h2>
-
-        <p
-          class="mt-4 font-poppins"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="100"
-        >
-          We are excited to share with you the newsletter of Norwich Private GP
-          Services and BEST Health and Wellness. Subscribe here to receive
-          valuable health and wellness information, along with updates about our
-          services. Our newsletter is designed to keep you informed and engaged
-          with the latest in healthcare. You can unsubscribe at any time if you
-          choose to stop receiving our updates
-        </p>
-
-        <div
-          class="relative mx-auto mt-10 h-16 rounded-full bg-white px-10 py-6 text-gray lg:w-1/2"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="100"
-        >
-          <div class="absolute left-10 top-0 z-50 flex h-full items-center">
-            <i class="far fa-paper-plane"></i>
-          </div>
-          <input
-            type="email"
-            name=""
-            id=""
-            class="absolute left-0 top-0 h-full w-full rounded-full px-16 focus:outline-none"
-            placeholder="Your Email Address"
-          />
-          <button
-            class="primary absolute right-0 top-0 h-full px-7 py-4 lg:px-14"
+      <div class="container">
+        <div class="mx-auto text-center lg:w-4/5 lg:px-4">
+          <h2
+            class="font-roboto font-bold capitalize"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
-            Subscribe
-          </button>
+            Subscribe To Our Newsletter
+          </h2>
+
+          <p
+            class="mt-4 font-poppins"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            We are excited to share with you the newsletter of Norwich Private
+            GP Services and BEST Health and Wellness. Subscribe here to receive
+            valuable health and wellness information, along with updates about
+            our services. Our newsletter is designed to keep you informed and
+            engaged with the latest in healthcare. You can unsubscribe at any
+            time if you choose to stop receiving our updates
+          </p>
+
+          <div
+            class="relative mx-auto mt-10 h-16 rounded-full bg-white px-10 py-6 text-gray"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="absolute left-10 top-0 z-50 flex h-full items-center">
+              <i class="far fa-paper-plane"></i>
+            </div>
+            <input
+              type="email"
+              name=""
+              id=""
+              class="absolute left-0 top-0 h-full w-full rounded-full px-16 focus:outline-none"
+              placeholder="Your Email Address"
+            />
+            <button
+              class="primary absolute right-0 top-0 h-full px-7 py-4 lg:px-14"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-primary py-10 text-white lg:py-20">
+    <footer class="bg-primary pb-5 pt-10 text-white lg:pb-10 lg:pt-20">
       <div
         class="container grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4"
       >
@@ -1539,7 +1548,13 @@
         </aside>
 
         <aside>
-          <h6 class="mb-6 font-bold">Gallery</h6>
+          <h6
+            class="mb-6 font-bold"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            Gallery
+          </h6>
 
           <div class="grid grid-cols-2 gap-2 lg:grid-cols-3">
             <a
@@ -1621,6 +1636,28 @@
             </a>
           </div>
         </aside>
+      </div>
+
+      <div class="container mt-20">
+        <div
+          class="flex flex-col items-center justify-between gap-2 lg:flex-row"
+        >
+          <aside class="flex gap-4">
+            <a href="#">Terms And Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </aside>
+
+          <aside>
+            Copyright ©<span id="year"></span> Design & Developed by
+            <a
+              href="https://raddito.com/"
+              target="_blank"
+              rel="noreferrer"
+              class="font-semibold"
+              >Raddito LLC</a
+            >.
+          </aside>
+        </div>
       </div>
     </footer>
 

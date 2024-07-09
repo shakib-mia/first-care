@@ -47,6 +47,45 @@ $(document).ready(() => {
   });
 });
 
+document.getElementById("year").innerText = new Date().getFullYear();
+
+function createScrollDirectionTracker() {
+  let scrollDirection = "up";
+  let lastScrollY = 0;
+
+  function handleScroll() {
+    const currentScrollY = window.pageYOffset;
+
+    if (currentScrollY > lastScrollY) {
+      scrollDirection = "down";
+    } else {
+      scrollDirection = "up";
+    }
+
+    lastScrollY = currentScrollY;
+    if (scrollDirection === "up") {
+      // console.log(scrollDirection);
+      document.getElementById("navbar").style.top = "0";
+      document.getElementById("navbar").style.transition = "all 0.5s ease";
+    } else {
+      document.getElementById("navbar").style.top = "-10rem";
+      document.getElementById("navbar").style.transition = "all 0.5s ease";
+    }
+  }
+  // console.log(scrollDirection);
+
+  window.addEventListener("scroll", handleScroll);
+
+  return {
+    getScrollDirection: () => scrollDirection,
+    cleanup: () => {
+      window.removeEventListener("scroll", handleScroll);
+    },
+  };
+}
+
+createScrollDirectionTracker();
+
 // $(document).ready(function () {
 //   function isElementInViewport(el) {
 //     var rect = el.getBoundingClientRect();

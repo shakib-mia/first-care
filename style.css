@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  /* @apply overflow-x-hidden; */
+}
+
 body {
   @apply overflow-x-hidden text-xs text-body sm:text-sm md:text-base;
 }
