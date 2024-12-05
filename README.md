@@ -8,13 +8,19 @@ FirstCare is your trusted private general practitioner service, dedicated to pro
 
 **Live Preview:** [FirstCare](https://firstcare-vite.netlify.app/)
 
-## Features:
+## Features
 
-- **Trusted Expertise:** Over 29 years of experience in the UK health system, offering comprehensive private medical services.
-- **Personalized Medicine:** Tailored health solutions based on genetic, clinical, lifestyle, nutritional, and neuroendocrine factors.
-- **Telemedicine Consultations:** Secure and flexible virtual consultations available at short notice.
-- **Educational Resources:** Informative blog and newsletter providing valuable health and wellness information.
-- **Responsive Design:** Seamlessly displays across various devices and screen sizes.
+- **Responsive Design:** Built with mobile-first principles, ensuring seamless display across various devices and screen sizes.
+
+- **Customizable Layout:** Tailwind CSS enables easy customization of colors, typography, and spacing to align with your brand identity.
+
+- **Optimized Performance:** Leveraging Vite's lightning-fast build process, your website loads swiftly, enhancing user experience.
+
+- **Extensive Listings:** Listed premium services like Task Management, Design System, Best Practices.
+
+- **Testimonials Section:** Showcase client testimonials to build trust and credibility, encouraging new visitors to engage with your offerings.
+
+- **Contact Form Integration:** Seamlessly integrate a contact form for inquiries, bookings, or general communication, enhancing user engagement.
 
 ## Usage Instructions:
 
