@@ -7,21 +7,20 @@
 html {
   /* @apply overflow-x-hidden; */
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 
 body {
   @apply overflow-x-hidden text-xs text-body sm:text-sm md:text-base;
 }
 
-button {
-  @apply px-14 py-4 capitalize transition;
+.btn-primary {
+  @apply inline-block rounded-full bg-primary px-14 py-4 capitalize text-white ring-primary ring-offset-2 transition hover:bg-primary-light active:ring-2;
 }
 
-button.primary {
-  @apply rounded-full bg-primary text-white ring-primary ring-offset-2 hover:bg-primary-light active:ring-2;
-}
-
-button.secondary {
-  @apply rounded-full bg-secondary text-white ring-secondary ring-offset-2 hover:bg-secondary-dark active:ring-2;
+.btn-secondary {
+  @apply inline-block rounded-full bg-secondary px-14 py-4 capitalize text-white ring-secondary ring-offset-2 transition hover:bg-secondary-dark active:ring-2;
 }
 
 h1 {
@@ -53,11 +52,11 @@ p {
 }
 
 nav ul {
-  @apply top-16 h-0 overflow-hidden py-0 transition duration-500 lg:h-auto;
+  @apply top-16 h-0 max-h-[27rem] overflow-hidden py-0 transition duration-500 lg:h-auto;
 }
 
 nav #nav-check:checked + ul {
-  @apply h-[22rem] pb-4 md:h-auto md:py-0;
+  @apply h-screen pb-4 md:h-auto md:py-0;
 }
 
 .subheading-icon {
